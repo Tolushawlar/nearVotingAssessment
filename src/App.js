@@ -69,7 +69,7 @@ function App() {
       
       <WalletConnectionComponent wallet={wallet} accountId={accountId} />
       
-      <div className="card">
+      {/* <div className="card">
         <h3>Debug Contract</h3>
         <button 
           className="button" 
@@ -84,7 +84,7 @@ function App() {
           Test Contract Methods
         </button>
       </div>
-      
+       */}
       {accountId && contract && (
         <>
           <CreateProposal contract={contract} accountId={accountId} onProposalCreated={handleProposalCreated} />
